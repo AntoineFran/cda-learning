@@ -19,6 +19,6 @@ public interface ISubjectDAO {
 	public Subject updateSubjectById(Subject pSubject);
 	
 	// Delete Subject
-	public void deleteSubjectById(int pId);
+	public boolean deleteSubjectById(int pId);
 	
 }
