@@ -25,7 +25,8 @@ public class SubjectDAOImp implements ISubjectDAO {
 		request = "select * FROM subject;";
 
 		try {
-			result = this.statement.executeQuery(request);
+			statement = connection.createStatement();
+			result = statement.executeQuery(request);
 			while (result.next()) {
 				Subject vSubject = new Subject(
 						result.getInt("id_subject"),
@@ -81,7 +82,6 @@ public class SubjectDAOImp implements ISubjectDAO {
 
 	@Override
 	public Subject updateSubjectById(Subject pSubject) {
-		Subject vSubject = new Subject();
 		request = "UPDATE subject SET title_subject = ?,"
 				+ " state = ?,"
 				+ " study_date = ?"
@@ -97,7 +97,7 @@ public class SubjectDAOImp implements ISubjectDAO {
 			return null;
 		}
 		
-		return vSubject;
+		return pSubject;
 	}
 
 	@Override
