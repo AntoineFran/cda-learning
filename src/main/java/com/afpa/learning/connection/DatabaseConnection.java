@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 
+
 public class DatabaseConnection implements AutoCloseable{
 	private static Connection connection = null;
 
@@ -13,10 +14,10 @@ public class DatabaseConnection implements AutoCloseable{
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Properties appProps = new Properties();
-			appProps.load(Connection.class.getResourceAsStream("/db.properties"));
+			appProps.load(DatabaseConnection.class.getResourceAsStream("/db.properties"));
 			connection = DriverManager.getConnection(
 					appProps.getProperty("url"), 
-					appProps.getProperty("username"),
+					appProps.getProperty("user"),
 					appProps.getProperty("password"));
 		} catch (Exception e) {
 			e.printStackTrace();
