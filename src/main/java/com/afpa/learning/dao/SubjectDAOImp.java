@@ -1,29 +1,35 @@
 package com.afpa.learning.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.afpa.learning.model.Subject;
 
-public class SubjectDAOImp implements ISubjectDAO{
+public class SubjectDAOImp implements ISubjectDAO {
 
 	@Override
 	public List<Subject> getSubject() {
-		return null;
+
+		List<Subject> vSubjects = new ArrayList<>();
+		return vSubjects;
 	}
 
 	@Override
 	public Subject addSubject(Subject pSubject) {
-		return null;
+		Subject vSubject = new Subject();
+		return vSubject;
 	}
 
 	@Override
 	public Subject showSubjectById(int pId) {
-		return null;
+		Subject vSubject = new Subject();
+		return vSubject;
 	}
 
 	@Override
 	public Subject updateSubjectById(Subject pSubject) {
-		return null;
+		Subject vSubject = new Subject();
+		return vSubject;
 	}
 
 	@Override
