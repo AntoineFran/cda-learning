@@ -17,7 +17,7 @@ public class SubjectDelete extends Action {
 	
 	@Override
 	public boolean execute() {
-		IHM_INS.display("Please enter the subject title :");
+		IHM_INS.display("Please enter the subject id to delete :");
 		int vId = IHM_INS.intReader();
 
 		subjectServiceImp.delete(vId);

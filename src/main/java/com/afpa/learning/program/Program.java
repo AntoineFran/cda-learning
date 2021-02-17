@@ -7,7 +7,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.TreeMap;
 
-import com.afpa.learning.connection.DatabaseConnection;
 import com.afpa.learning.view.Action;
 import com.afpa.learning.view.TheActions;
 
@@ -29,7 +28,7 @@ public class Program {
 			if (choices.contains(input)) {
 				continueAction = actions.get(input).execute();
 			} else {
-				IHM_INS.display("Mauvaise saisie");
+				IHM_INS.display("Wrong Input!");
 			}
 		} while (continueAction);
 	}
