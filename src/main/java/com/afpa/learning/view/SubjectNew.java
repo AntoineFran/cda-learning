@@ -23,7 +23,7 @@ public class SubjectNew extends Action {
 		String vTitle = IHM_INS.stringReader();
 
 		IHM_INS.display(
-				"Please choose between these states, which one describe the most your knowledge in this subject and write it : + \n "
+				"Please choose between these states, which one describe the most your knowledge in this subject and write it : \n"
 						+ "     - Unknown \n" + "     - Discovered \n" + "     - Understood");
 		String vState = IHM_INS.stringReader();
 

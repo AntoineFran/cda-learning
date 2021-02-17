@@ -14,7 +14,6 @@ import com.afpa.learning.view.TheActions;
 public class Program {
 	public static void main(String[] args) {
 
-		DatabaseConnection.getConnection();
 		TreeMap<Integer, Action> actions = TheActions.addAllActions();
 
 		boolean continueAction = true;

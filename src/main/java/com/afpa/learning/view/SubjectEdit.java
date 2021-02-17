@@ -25,7 +25,7 @@ public class SubjectEdit extends Action {
 		IHM_INS.display("Please enter the subject title :");
 		String vTitle = IHM_INS.stringReader();
 
-		IHM_INS.display("Please choose between these states, which one describe the most your knowledge about this subject  and write it : + \n "
+		IHM_INS.display("Please choose between these states, which one describe the most your knowledge about this subject  and write it :  \n"
 						+ "     - Unknown \n" + "     - Discovered \n" + "     - Understood");
 		String vState = IHM_INS.stringReader();
 
