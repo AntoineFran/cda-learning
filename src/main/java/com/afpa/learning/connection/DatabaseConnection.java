@@ -6,10 +6,10 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 
-public class DabaseConnection implements AutoCloseable{
+public class DatabaseConnection implements AutoCloseable{
 	private static Connection connection = null;
 
-	private DabaseConnection() {
+	private DatabaseConnection() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Properties appProps = new Properties();
@@ -25,7 +25,7 @@ public class DabaseConnection implements AutoCloseable{
 
 	public static Connection getConnection() {
 		if (connection == null) {
-			new DabaseConnection();
+			new DatabaseConnection();
 		}
 		return connection;
 	}
