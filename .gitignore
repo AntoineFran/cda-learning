@@ -1,4 +1,6 @@
 .classpath
+.project
+resources/
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/eclipse,maven,java
