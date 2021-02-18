@@ -14,7 +14,7 @@ public class SubjectIndex extends Action {
 	private static final int ID = 1;
 	private static final String DESCRIPTION = "List the subjects";
 	
-	SubjectIndex() {
+	public SubjectIndex() {
 		super(ID, DESCRIPTION);
 	}
 	

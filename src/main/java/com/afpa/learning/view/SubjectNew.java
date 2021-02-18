@@ -13,7 +13,7 @@ public class SubjectNew extends Action {
 	private static final int ID = 2;
 	private static final String DESCRIPTION = "Create a subject";
 
-	SubjectNew() {
+	public SubjectNew() {
 		super(ID, DESCRIPTION);
 	}
 

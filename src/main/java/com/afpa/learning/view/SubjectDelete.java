@@ -11,7 +11,7 @@ public class SubjectDelete extends Action {
 	private static final int ID = 5;
 	private static final String DESCRIPTION = "Delete a subject";
 	
-	SubjectDelete() {
+	public SubjectDelete() {
 		super(ID, DESCRIPTION);
 	}
 	
