@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 import com.afpa.learning.connection.DatabaseConnection;
 
@@ -21,9 +22,12 @@ public class ConnectionTest {
     }
     
     @Test
-    public void database_connection_not_null_test() {
+    public void database_connection_not_null_test() throws SQLException {
     	connection = DatabaseConnection.getConnection();
     	assertNotEquals(null, connection);
+    	
     }
+    
+    
     
 }
