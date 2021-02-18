@@ -11,7 +11,7 @@ public class SubjectShow extends Action {
 	private static final int ID = 3;
 	private static final String DESCRIPTION = "Show a subject";
 
-	SubjectShow() {
+	public SubjectShow() {
 		super(ID, DESCRIPTION);
 	}
 

@@ -13,7 +13,7 @@ public class SubjectEdit extends Action {
 	private static final int ID = 4;
 	private static final String DESCRIPTION = "Modify a subject";
 	
-	SubjectEdit() {
+	public SubjectEdit() {
 		super(ID, DESCRIPTION);
 	}
 	

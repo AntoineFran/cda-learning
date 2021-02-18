@@ -10,10 +10,6 @@ public class Subject {
 
 	public Subject() {}
 
-	public Subject(String pTitle, String pState) {
-		this.title = pTitle;
-		this.state = pState;
-	}
 	public Subject(String pTitle, String pState, Date pStudyDate) {
 		this.title = pTitle;
 		this.state = pState;
