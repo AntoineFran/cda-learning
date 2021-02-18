@@ -7,7 +7,7 @@ public class Exit extends Action {
 	private static final int ID = 0;
 	private static final String DESCRIPTION = "Leave the program";
 	
-	Exit() {
+	public Exit() {
 		super(ID, DESCRIPTION);
 	}
 	

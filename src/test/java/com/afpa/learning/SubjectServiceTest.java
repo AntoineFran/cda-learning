@@ -29,7 +29,7 @@ public class SubjectServiceTest {
 	static void init() throws Exception {
 		subjectServiceImp = new SubjectServiceImp();
 		Connection connection = DatabaseConnection.getConnection();
-		RunScript.execute(connection, new FileReader(SubjectDAOTest.class.getResource("/script_ddl.sql").getFile()));
+		RunScript.execute(connection, new FileReader(SubjectProgramTest.class.getResource("/script_ddl.sql").getFile()));
 	}
 
 	@Test
