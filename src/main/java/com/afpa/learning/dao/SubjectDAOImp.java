@@ -82,6 +82,9 @@ public class SubjectDAOImp implements ISubjectDAO {
 
 	@Override
 	public Subject updateSubjectById(Subject pSubject) {
+		if (pSubject == null) {
+			return null;
+		}
 		request = "UPDATE subject SET title_subject = ?,"
 				+ " state = ?,"
 				+ " study_date = ?"
